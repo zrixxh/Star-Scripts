@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Scripts – Roblox Scripts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📜 Roblox Scripts</h1>
+    <div class="scripts-container">
+
+      <div class="script-card">
+        <h2>Phantom Forces</h2>
+        <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/SSN31/test/refs/heads/main/PhantomForc-NexaHub3131"))()</textarea>
+        <button onclick="copyScript(this)">📋 Copy</button>
+        <p class="review">👍 1,254 Likes – ✨ "This script is smooth and super OP!"</p>
+      </div>
+
+      <div class="script-card">
+        <h2>Fisch</h2>
+        <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/cayden305/Scripts/refs/heads/main/FischObfuscated.lua"))()</textarea>
+        <button onclick="copyScript(this)">📋 Copy</button>
+        <p class="review">👍 932 Likes – ✨ "Legit and works like a charm. Worth it!"</p>
+      </div>
+
+      <div class="script-card">
+        <h2>INK GAMES</h2>
+        <textarea readonly>loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/InkGame"))()</textarea>
+        <button onclick="copyScript(this)">📋 Copy</button>
+        <p class="review">👍 1,045 Likes – ✨ "Clean UI, fast execution. I love this one."</p>
+      </div>
+
+    </div>
+
+    <a class="back-link" href="index.html">← Back to Main Page</a>
+    <footer>
+      💬 Join our Discord: <a class="discord-link" href="https://discord.gg/fZ8kKAsJVQ" target="_blank">Star Scripts Server</a>
+    </footer>
+  </div>
+
+  <script>
+    function copyScript(button) {
+      const textarea = button.previousElementSibling;
+      textarea.select();
+      textarea.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Copied to clipboard!");
+    }
+  </script>
+</body>
+</html>
 
